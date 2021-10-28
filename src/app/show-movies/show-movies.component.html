@@ -1,0 +1,16 @@
+<form class="d-flex mt-5 justify-content-end">
+  <input class="form-control me-2 w-50" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<hr>
+<h1>Movies</h1>
+<div class="row">
+  <div *ngFor="let item of movies" class="card col-3 m-2" style="width: 18rem;" >
+    <div class="card-body">
+      <h5 class="card-title">{{ item.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ item.director }}</h6>
+      <hr>
+      <p class="card-text">{{ item.opening_crawl }}</p>
+    </div>
+  </div>
+</div>
